@@ -26,6 +26,7 @@ Repository = "https://github.com/mlcommons/chakra.git"
 "chakra.et_generator" = "utils/et_generator"
 "chakra.et_jsonizer" = "utils/et_jsonizer"
 "chakra.third_party.utils" = "third_party/utils"
+"chakra.trace_link" = "trace_link"
 
 [tool.setuptools.package-data]
 "chakra.et_def" = ["et_def_pb2.pyi", "et_def.proto"]

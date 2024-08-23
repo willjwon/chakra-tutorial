@@ -113,12 +113,11 @@ def main() -> None:
                     logger)
             converter.convert()
         elif args.input_type == "PyTorch":
-            converter = PyTorch2ChakraConverter(
+            converter = PyTorch2ChakraConverter()
+            converter.convert(
                     args.input_filename,
                     args.output_filename,
-                    args.num_dims,
-                    logger)
-            converter.convert()
+                    False)
         else:
             logger.error(f"{args.input_type} unsupported")
             sys.exit(1)
